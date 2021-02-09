@@ -1,3 +1,12 @@
+#black_bar{
+  height:4px; color:black;background-color:black
+}
+#search{
+  margin-top: 20px; cursor: pointer
+}
+#shopping_cart{
+  margin-left: 30px; cursor: pointer
+}
 #Product {
   float: left;margin-left: 320px
 }
@@ -5,7 +14,7 @@
   margin-left: 325px; margin-top: 160px
 }
 #Description {
-  margin-left: 300px; margin-top:  360px; font-size: 30px;
+  margin-left: 300px; margin-top:  400px; font-size: 30px;
 }
 #options {
   float: right; margin-right: 420px; margin-top: -470px
@@ -16,4 +25,16 @@ color: black; padding: 20px 40px; text-align: center; display: inline-block; fon
 }
 #add_to_cart{
   float: right; margin-right: 684px; margin-top: -300px
+}
+#additional_products{
+  float: right;margin-right: 150px
+}
+#products {
+padding: 50px
+}
+#headset {
+float:right; margin-right: 100px; margin-top: -40px; cursor: pointer
+}
+#mouse{
+  margin-left: 130px; cursor: pointer
 }
