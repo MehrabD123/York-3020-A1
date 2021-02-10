@@ -1,3 +1,15 @@
+#Key{
+  float:left; width:30%;margin-top: 30px ;margin-left:300px
+}
+#PC{
+  float:left; width:30%; margin-left:-400px; margin-top: 29px
+}
+#GM{
+  float:left; width:30%; margin-left:-420px; margin-top: 29px
+}
+#logo{
+  float: left;
+}
 #black_bar{
   height:4px; color:black;background-color:black
 }
