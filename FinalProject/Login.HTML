@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login Page</title>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+  <h1>Login Page</h1>
+  <form id="login" method="post">
+    <div class="loginForm">
+      <label for="User">Username:</label>
+      <input type="text" name="user" id="user">
+      <br><br>
+      <label for="Pass">Password:</label>
+      <input type="text" name="pass" id="pass">
+      <br><br>
+      <button type="Submit" name="button">Login</button>
+    </div>
+  </form>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#login').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: 'login.php',
+            data: $(this).serialize(),
+            success: function(response)
+            {
+                var jsonData = JSON.parse(response);
+
+                // user is logged in successfully in the back-end
+                // let's redirect
+                if (jsonData.success == "1")
+                {
+                    alert('Valid Credentials!');
+                }
+                else
+                {
+                    alert('Invalid Credentials!');
+                }
+           }
+       });
+     });
+});
+</script>
+</body>
+</html>

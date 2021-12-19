@@ -1,0 +1,22 @@
+#container{
+margin-left:830px;
+  width: 440px;
+  height: 440px;
+  border-color: black;
+  border-style: solid;
+  position: relative;
+}
+.box{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  padding: 2px;
+  border-style: solid;
+}
+#button{
+margin-top: 50px;
+  margin-left: 1000px;
+}
+h1{
+  margin-left: 960px;
+}
